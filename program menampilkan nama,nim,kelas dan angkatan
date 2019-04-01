@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+cout<<"nama : sahraeni maulida "<<endl;
+cout<<"nim : 1829140002 "<<endl;
+cout<<"kelas : tekom B "<<endl;
+cout<<"tahun : 2018"<<endl;
+
+return 0;
+
+}
