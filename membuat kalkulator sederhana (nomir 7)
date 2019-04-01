@@ -1,24 +1,33 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main (int arg, char*argv [])
 {
-  float a,b;
-  int kode;
+  int a,b,c,d;
+  char pilih;
+  char jawab;
   
-  cout<<"pilihan menu : \n";
-  cout<<"1.perkalian (*) \n";
-  cout<<"2.pembagian (/) \n";
-  cout<<"silahkan masukkan kode menu : ";cin >>kode ;
+  cout<<"angka pertama : ";
+  cin>>a;
+  cout<<"angka kedua : ";
+  cin>>b;
   
-    cout <<"masukkan angka pertama : ";cin>>a;
-    cout <<"masukkan angka kedua : ";cin>>b;
-    if(int kode==1) {
-      cout<<"\n hasil perkalian dari "<<a<<" * "<<b<<" adalah : "<< a * b <<;
-      }else if (kode == 2) {
-      cout<<"\n hasil pembagian dari "<<a<<" / "<<b<<" adalah : "<< a / b <<;
-      }
-      return 0;
-      
- }
-      
+  cout<<"operasi yang akan dipilih : "<<endl;
+  cout<<"1. tekan * jika ingin menggunakan perkalian "<<endl;
+  cout<<"2. tekan / jika ingin menggunakan pembagian "<<endl;
+  cout<<endl;
+  cout<<"masukkan pilihan : ";
+  cin>>pilih;
+  
+  if (pilih == '*')
+  {
+        c=a*b;
+        cout<<"hasil perkalian = "<<c<<endl;
+   }
+   if (pilih == '/')
+   {
+   d=a/b;
+   cout<<"hasil pembagian = "<<d<<endl;
+   }
+   return 0;
+   }
